@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS-->
+        <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!--jQuery library-->
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS-->
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!--Latest compiled JavaScript-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src = "js/index.js" ></script>
+        <link href = "css/index.css" rel = "stylesheet">
+        <title>Formulario Registro de Usuario</title>
+    </head>
+    <body class="bg-secondary d-flex justify-content-center align-items-center vh-100">
+
+
+        <div
+            class="bg-white p-3 border border-5 rounded-3 text-secondary shadow"
+            style="height:35rem" >  
+            <p class="font-weight-bold text-center fs-3">
+                REGISTRO DE USUARIO
+            </p>
+            <form id="form-register" class="pb-4">
+                <div class="form-group col-md-12">
+                    <input type = "text" class="form-control" id="input-username" placeholder= "Nombre de usuario" required>
+                </div>
+                <div class="form-group col-md-12">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="Nombre" required>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" aria-label="Apellidos" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group col-md-12">
+                    <div class="row">
+                        <div class="col">
+                            <input type="password" class="form-control" id="input-password" placeholder="Contraseña" aria-label="Contraseña" required>
+                        </div>
+                        <div class="col">
+                            <input type="password" class="form-control" id="input-contrasena-repeat" placeholder="Repetir Contraseña" aria-label="Repetir Contraseña" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group col-md-12">
+                    <input type = "text" class="form-control" id="input-email" placeholder= "Email" required >
+                </div>
+                <div class="form-group col-md-12">
+                    <input type = "text" class="form-control" id="input-telefono" placeholder= "Telefono" required >
+                </div>
+                <div class="form-group col-md-12">
+                    <input type = "text" class="form-control" id="input-ciudad" placeholder= "Ciudad" required >
+                </div>
+                <div class="form-group col-md-12">
+                    <input type = "text" class="form-control" id="input-direccion" placeholder= "Direccion" required>
+                </div>
+                <button class="btn btn-secondary btn-block text-white w-100  mt-4 fw-semibold shadow-sm">Registrar Usuario</button>
+            </form>
+            <div id="register-error" class="alert alert-danger d-none" role="alert"></div>
+            <a href="index.html" class="text-decoration-none text-primary fw-semibold">¿Ya tienes cuenta? Iniciar Sesión</a>
+        </div>
+
+    </body>
+</html>
+

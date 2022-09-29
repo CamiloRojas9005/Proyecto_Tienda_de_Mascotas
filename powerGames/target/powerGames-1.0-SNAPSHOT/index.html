@@ -1,0 +1,53 @@
+<html>
+    <head> 
+        <title>Power Games</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+        <link rel="icon" href="img/seta.png">
+        <script src="js/index.js"></script> 
+    </head>
+
+    <body class="bg-secondary d-flex justify-content-center align-items-center vh-100">  <!--aqui se dan los stylos para centrar   -->
+        <div
+            class="bg-white p-3 border border-5 rounded-3 text-secondary shadow"
+            style="height:30rem" >  
+
+            <p class="font-weight-bold text-center fs-3">
+                Bienvenido
+            </p>
+
+            <div class="d-flex justify-content-center"> <!-- centra el logo del login -->
+                <img src="img/login.png" alt="icon" style="height: 10rem"/>
+            </div>
+            <form id="form-login">  
+                <div class="input-group mt-4">
+                    <div class="input-group-text">   
+                        <img src="img/usuario.png" alt="iconU" style="height: 2rem" />
+                    </div>
+                    <input
+                        class="form-control bg-light" type="text" id="usuario" placeholder="Usuario" required>
+                </div>
+                <div class="input-group mt-1">
+                    <div class="input-group-text">
+                        <img src="img/security.png" alt="icon" style="height: 2rem" />
+                    </div>
+                    <input class="form-control bg-light" type="password" id="password" placeholder="Contraseña" required>
+                </div>
+                <button class="btn btn-secondary btn-block text-white w-100  mt-4 fw-semibold shadow-sm">Iniciar Sesión</button>
+            </form>
+            <div class="d-flex gap-1 justify-content-center mt-1">
+                <div>¿Aún no tienes cuenta?</div>
+                <a href="register.html" class="text-decoration-none text-primary fw-semibold">Regístrate</a>
+            </div>
+        <div id="login-error" class="alert alert-danger d-none" role="alert">Usuario o contraseña incorrectos</div>
+        </div>     
+    </body>
+   
+</html>
