@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Mi perfil - Peliculas</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="js/profile.js"></script>
+
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+
+
+    <body>
+        <div class="container-fluid p-5 bg-secondary text-white text-center">
+            <h1>
+                !Editar Perfil!
+            </h1>
+        </div>
+
+        <main class="p-4 d-flex flex-column align-items-center">
+            <div class="card" id="form-container">
+                <div class="card-body">
+                    <form method="GET" id="form-modificar" class="pb-4">
+                        <div class="form-group col-md-12">
+                            <label for="username" class="form-label">Nombre de Usuario</label>
+                            <input type = "text" class="form-control" id="input-username" placeholder= "Nombre de usuario" readonly>
+                        </div>
+
+                        <div class="form-group col-md-12">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input type="text" class="form-control" id="input-nombre" placeholder="Nombre" aria-label="Nombre">
+                                </div>
+                                <div class="col">
+                                    <label for="apellidos" class="form-label">Apellidos</label>
+                                    <input type="text" class="form-control" id="input-apellidos" placeholder="Apellidos" aria-label="Apellidos">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="contraseña" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="input-password" placeholder="Contraseña" aria-label="Contraseña">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type = "text" class="form-control" id="input-email" placeholder= "Email" >
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="telefono" class="form-label">Telefono</label>
+                            <input type = "text" class="form-control" id="input-telefono" placeholder= "Telefono" >
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="ciudad" class="form-label">Ciudad</label>
+                            <input type = "text" class="form-control" id="input-ciudad" placeholder= "Ciudad" >
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="direccion" class="form-label">Direccion</label>
+                            <input type = "text" class="form-control" id="input-direccion" placeholder= "Direccion">
+                        </div>
+                        <div class="d-grid gap-2 d-md-block" style="text-align:center;">
+                            <button type="submit" class="btn btn-primary" id="modificar-btn">Guardar datos</button>
+                          
+                            <a href="home.html" class="btn btn-success">Cancelar</a>
+                        </div>
+                    </form>
+                    <div class="alert alert-danger d-none" id="modificar-error" role="alert">
+                        Error en la modificacación de los datos del usuario
+                    </div>
+                    <div id="modificar-exito" class="alert alert-success d-none" role="alert">
+                        Modificación de los datos del usuario realizada correctamente
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

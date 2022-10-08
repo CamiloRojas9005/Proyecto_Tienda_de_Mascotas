@@ -14,58 +14,87 @@
 
         <!-- Latest compiled JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-        <link rel="stylesheet"
-              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
               integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
               crossorigin="anonymous" />
 
         <script src="js/main.js"></script>
         <link rel="stylesheet" href="css/main.css" />
+        <link rel="icon" href="img/seta.png">
         <title>Inicio</title>
+
     </head>
-
     <body>
-        <header>
-            <div class="container-fluid p-3 bg-secondary text-white text-center">
-                <h1>
-                    power Game
-                </h1>
-            </div>
-        </header>
-
+        <div class="text-center mx-auto" ><h1> </h1></div>
+        <div class="text-center mx-auto" ><img src = "img/videoJuego.jpg" width="1200" height="200" ></div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="container">
+
+                <a class="navbar-brand" href="#"><h5>HOME</h5></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+
+                        <!-- <li class="nav-item ">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
+                        </li> -->
+
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Contacto</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
+
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown link
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Ajustes
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">accion</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id = "main-menu">
+                                <li><a id = "mi-perfil-btn" class="dropdown-item">Mi Perfil</a></li>
+                                <li><a id = "salir-btn" class="dropdown-item" href="index.html">Salir</a></li>
+
                             </ul>
                         </li>
+
                     </ul>
+
                 </div>
             </div>
         </nav>
 
+       
+        <main class="p-4 d-flex justify-content-center">
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Titulo</th>
+                        <th scope="col">Plataforma</th>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Genero</th>
+                        <th scope="col">Stock</th>
+                        <th scope="col">Alquiler</th>
+                        <th scope="col">Compra</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Precio</th>
+                    </tr>
+                </thead>
+                <tbody id="videojuego-tbody">
+                
+                </tbody>
+            </table>
+        </main>
 
     </body>
 </html>
